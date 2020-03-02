@@ -168,7 +168,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1400px;
   width: 100%;
   padding-top: 130px;
   margin: 0 auto;
@@ -180,16 +180,15 @@ p {
   }
 }
 nav {
-  max-width: 800px;
+  max-width: 1400px;
   width: 100%;
   padding-top: 130px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   padding-top: 0;
-  position: fixed;
   top: 0;
-  height: 120px;
   background-color: white;
 }
 @media (max-width: 500px) {
@@ -198,7 +197,11 @@ nav {
     width: 85%;
   }
 }
-nav a {
+nav .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .links a {
   text-decoration: none;
   color: black;
 }
@@ -208,8 +211,21 @@ nav a {
   }
 }
 .searchbar {
+  max-width: 1400px;
+  width: 100%;
+  padding-top: 130px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .searchbar {
+    max-width: 500px;
+    width: 85%;
+  }
+}
+.searchbar input {
+  width: 60%;
 }
 .searchbar .btn {
   display: flex;
