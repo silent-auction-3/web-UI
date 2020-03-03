@@ -139,7 +139,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #050c10;
+  color: #050C10;
 }
 nav {
   font-family: 'Ubuntu', sans-serif;
@@ -151,7 +151,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #050c10;
+  color: #050C10;
 }
 h1 {
   font-size: 4rem;
@@ -182,7 +182,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #24364b;
+  background-color: #24364B;
 }
 .navbar .logo {
   width: 20%;
@@ -196,51 +196,42 @@ p {
 }
 .navbar nav a {
   text-decoration: none;
-  color: #f8f6f5;
+  color: #F8F6F5;
 }
 @media (max-width: 500px) {
   .navbar nav {
     width: 80%;
   }
-
+}
 .searchbar {
   display: flex;
   justify-content: center;
   padding: 2%;
-
 }
-.ex-body {
-  background-color: lightblue;
+.searchbar input {
+  width: 60%;
 }
-.ex-sect {
+.searchbar .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background-color: #0f1a24;
+  background-color: #0F1A24;
   width: 200px;
-  color: #f8f6f5;
+  color: #F8F6F5;
   height: 38px;
   font-size: 1.8rem;
 }
 .searchbar .btn:hover {
-  background-color: #f8f6f5;
-  color: #0f1a24;
-  border: 2px solid #0f1a24;
-
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
+  background-color: #F8F6F5;
+  color: #0F1A24;
+  border: 2px solid #0F1A24;
 }
-.ex-sect .ex-img {
-  width: 21%;
-  padding: 1% 1% 5% 1%;
-  border: 1px solid black;
-  box-shadow: 5px 10px gray;
-  margin-bottom: 4%;
-  background-color: white;
-  opacity: 0.8;
+@media (max-width: 500px) {
+  .searchbar .btn {
+    width: 100%;
+    height: 50px;
+  }
 }
 .categories {
   max-width: 1400px;
@@ -256,4 +247,34 @@ p {
 .categories nav {
   display: flex;
   justify-content: space-between;
+}
+.ex-sect {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ex-sect .ex-img {
+  width: 24%;
+  padding: 1% 1% 5% 1%;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 10px lightgrey;
+}
+.ex-body {
+  background-color: lightblue;
+}
+.ex-sect {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ex-sect .ex-img {
+  width: 21%;
+  padding: 1% 1% 5% 1%;
+  border: 1px solid black;
+  box-shadow: 5px 10px gray;
+  margin-bottom: 4%;
+  background-color: white;
+  opacity: 0.8;
 }
