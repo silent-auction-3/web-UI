@@ -210,42 +210,32 @@ nav .links a {
     width: 80%;
   }
 }
-.searchbar {
-  max-width: 1400px;
+.ex-sect {
+  display: flex;
   width: 100%;
-  padding-top: 130px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ex-sect .ex-img {
+  width: 24%;
+  padding: 1% 1% 5% 1%;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 10px lightgrey;
+}
+.ex-body {
+  background-color: lightblue;
+}
+.ex-sect {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-@media (max-width: 500px) {
-  .searchbar {
-    max-width: 500px;
-    width: 85%;
-  }
-}
-.searchbar input {
-  width: 60%;
-}
-.searchbar .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background-color: #0F1A24;
-  width: 200px;
-  color: #F8F6F5;
-  height: 32px;
-  font-size: 1.8rem;
-}
-.searchbar .btn:hover {
-  background-color: #F8F6F5;
-  color: #0F1A24;
-  border: 2px solid #0F1A24;
-}
-@media (max-width: 500px) {
-  .searchbar .btn {
-    width: 100%;
-    height: 50px;
-  }
+.ex-sect .ex-img {
+  width: 21%;
+  padding: 1% 1% 5% 1%;
+  border: 1px solid black;
+  box-shadow: 5px 10px gray;
+  margin-bottom: 4%;
+  background-color: white;
 }
