@@ -1,14 +1,25 @@
 
-// .searchbar {
-//     .container();
-//     .flex-center();
-//     input {
-//         width: 60%;
-//     }
-//     .btn {
-//         .btn-base(@bg-color, 200px, @nav-font);
-//     }// .btn
-// }// searchbar
+.searchbar {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    input {
+        width: 60%;
+    }
+    .btn {
+        .btn-base(@bg-color, 200px, @nav-font);
+    }// .btn
+}// searchbar
+
+.categories {
+    .container();
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 .ex-sect{
     display: flex;
@@ -23,3 +34,4 @@
         box-shadow: 5px 10px lightgrey;
     }//closes ex-img
 }//closes section
+
