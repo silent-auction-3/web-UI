@@ -1,21 +1,24 @@
-nav {
-    .container();
+
+.navbar {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding-top: 0;
-    top: 0;
-    background-color: white;
-    .links {
-        display: flex;
-        justify-content: space-evenly;
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    width: 100%;
+    background-color: @nav-bg;
+    .logo {
+        width: 20%;
+        padding: 2%;
     }
-
-    @media @phone {
+    nav {
+        display: flex;
+        justify-content: space-around;
         width: 80%;
+        align-items: center;
+            a {
+                text-decoration: none;
+                color: @nav-font;
+            }
+        @media @phone {
+            width: 80%;
+        }
     }
 }
