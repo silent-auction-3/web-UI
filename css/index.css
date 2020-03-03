@@ -202,16 +202,17 @@ p {
   .navbar nav {
     width: 80%;
   }
-}
+
 .searchbar {
   display: flex;
   justify-content: center;
   padding: 2%;
+
 }
-.searchbar input {
-  width: 60%;
+.ex-body {
+  background-color: lightblue;
 }
-.searchbar .btn {
+.ex-sect {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,12 +227,19 @@ p {
   background-color: #f8f6f5;
   color: #0f1a24;
   border: 2px solid #0f1a24;
+
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
 }
-@media (max-width: 500px) {
-  .searchbar .btn {
-    width: 100%;
-    height: 50px;
-  }
+.ex-sect .ex-img {
+  width: 21%;
+  padding: 1% 1% 5% 1%;
+  border: 1px solid black;
+  box-shadow: 5px 10px gray;
+  margin-bottom: 4%;
+  background-color: white;
 }
 .categories {
   max-width: 1400px;
