@@ -35,3 +35,46 @@
     }//closes ex-img
 }//closes section
 
+#carousel{
+    position: relative;
+}
+.carouselimg{
+    width: 100%;
+    height: 50vh;
+}
+#carousel img{
+    position:absolute;
+  left:0;
+  animation: imgcarousel 9s infinite;
+}
+
+@keyframes imgcarousel {
+    0%{
+        opacity:1;
+    }
+    17%{
+        opacity:1;
+    }
+    25%{
+        opacity:0;
+    }
+    92%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#carousel .img1{
+    animation-delay: 6s;
+}
+#carousel .img2{
+    animation-delay: 4s;
+}
+#carousel .img3{
+    animation-delay: 2s;
+}
+#carousel .img4{
+    animation-delay: 0s;
+}
