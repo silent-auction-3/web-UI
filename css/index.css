@@ -329,3 +329,17 @@ p {
   background-color: white;
   opacity: 0.8;
 }
+.ab-body {
+  background-color: darkblue;
+}
+.ab-sect {
+  display: flex;
+  width: 100%;
+}
+.ab-sect .ab-div {
+  display: flex;
+  flex-direction: column;
+}
+.profilepic {
+  width: 28%;
+}
