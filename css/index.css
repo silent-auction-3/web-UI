@@ -139,7 +139,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #050c10;
+  color: #050C10;
 }
 nav {
   font-family: 'Ubuntu', sans-serif;
@@ -151,7 +151,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #050c10;
+  color: #050C10;
 }
 h1 {
   font-size: 4rem;
@@ -187,7 +187,7 @@ footer .copyright {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #24364b;
+  background-color: #24364B;
 }
 .navbar .logo {
   width: 20%;
@@ -201,7 +201,7 @@ footer .copyright {
 }
 .navbar nav a {
   text-decoration: none;
-  color: #f8f6f5;
+  color: #F8F6F5;
 }
 @media (max-width: 500px) {
   .navbar nav {
@@ -221,16 +221,16 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background-color: #0f1a24;
+  background-color: #0F1A24;
   width: 200px;
-  color: #f8f6f5;
+  color: #F8F6F5;
   height: 38px;
   font-size: 1.8rem;
 }
 .searchbar .btn:hover {
-  background-color: #f8f6f5;
-  color: #0f1a24;
-  border: 2px solid #0f1a24;
+  background-color: #F8F6F5;
+  color: #0F1A24;
+  border: 2px solid #0F1A24;
 }
 @media (max-width: 500px) {
   .searchbar .btn {
@@ -319,7 +319,7 @@ footer .copyright {
 .ex-sect h3 {
   margin-top: 4%;
   color: gray;
-  text-decoration: #dc143c line-through;
+  text-decoration: crimson line-through;
 }
 .ex-sect h5 {
   margin: 2% 0%;
@@ -334,6 +334,20 @@ footer .copyright {
   margin-bottom: 10%;
   background-color: white;
   opacity: 0.8;
+}
+.ab-body {
+  background-color: darkblue;
+}
+.ab-sect {
+  display: flex;
+  width: 100%;
+}
+.ab-sect .ab-div {
+  display: flex;
+  flex-direction: column;
+}
+.profilepic {
+  width: 28%;
 }
 .faq {
   display: flex;
