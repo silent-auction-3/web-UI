@@ -167,6 +167,11 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+footer .copyright {
+  font-size: 1.4rem;
+  margin: 4%;
+  text-align: center;
+}
 .container {
   max-width: 1400px;
   width: 100%;
@@ -237,6 +242,7 @@ p {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .categories {
@@ -342,4 +348,14 @@ p {
 }
 .profilepic {
   width: 28%;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+.faq .faqCard {
+  width: 80%;
+  margin: 2%;
 }
