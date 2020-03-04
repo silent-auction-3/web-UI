@@ -140,6 +140,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #050C10;
+  background-color: #A9B1AF;
 }
 nav {
   font-family: 'Ubuntu', sans-serif;
@@ -254,6 +255,10 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
 }
+.categories nav a {
+  text-decoration: none;
+  color: black;
+}
 .trending {
   max-width: 1400px;
   width: 100%;
@@ -303,7 +308,8 @@ footer .copyright {
 }
 .carouselimg {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
+  padding: 3%;
 }
 #carousel img {
   position: absolute;
@@ -340,13 +346,16 @@ footer .copyright {
   animation-delay: 0s;
 }
 .ex-body {
-  background-color: lightblue;
+  background-color: #A9B1AF;
 }
 .ex-sect {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.ex-sect div {
+  text-align: center;
 }
 .ex-sect h3 {
   margin-top: 4%;
@@ -368,7 +377,7 @@ footer .copyright {
   opacity: 0.8;
 }
 .ab-body {
-  background-color: darkblue;
+  background-color: #A9B1AF;
 }
 .ab-sect {
   display: flex;
