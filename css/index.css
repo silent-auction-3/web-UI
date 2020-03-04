@@ -242,7 +242,7 @@ footer .copyright {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  margin: 2%;
+  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .categories {
@@ -253,6 +253,38 @@ footer .copyright {
 .categories nav {
   display: flex;
   justify-content: space-between;
+}
+.trending {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .trending {
+    max-width: 500px;
+    width: 85%;
+  }
+}
+.ending {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .ending {
+    max-width: 500px;
+    width: 85%;
+  }
+}
+.circleimg {
+  border-radius: 50%;
+  width: 15%;
 }
 .ex-sect {
   display: flex;
