@@ -1,80 +1,98 @@
-
 .searchbar {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    padding: 2%;
+    padding        : 2%;
+
     input {
         width: 60%;
     }
+
     .btn {
         .btn-base(@bg-color, 200px, @nav-font);
-    }// .btn
-}// searchbar
+    }
+
+    // .btn
+}
+
+// searchbar
 
 .categories {
     .container();
-    
+
     nav {
-        display: flex;
+        display        : flex;
         justify-content: space-between;
     }
 }
 
 
-.ex-sect{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+.ex-sect {
+    display        : flex;
+    width          : 100%;
+    flex-wrap      : wrap;
     justify-content: space-evenly;
 
-    .ex-img{
-        width: 24%;
-        padding: 1% 1% 5% 1%;
-        border: 1px solid lightgrey;
+    .ex-img {
+        width     : 24%;
+        padding   : 1% 1% 5% 1%;
+        border    : 1px solid lightgrey;
         box-shadow: 5px 10px lightgrey;
-    }//closes ex-img
-}//closes section
+    }
 
-#carousel{
+    //closes ex-img
+}
+
+//closes section
+
+#carousel {
     position: relative;
 }
-.carouselimg{
-    width: 100%;
+
+.carouselimg {
+    width : 100%;
     height: 50vh;
 }
-#carousel img{
-    position:absolute;
-  left:0;
-  animation: imgcarousel 9s infinite;
+
+#carousel img {
+    position : absolute;
+    left     : 0;
+    animation: imgcarousel 9s infinite;
 }
 
 @keyframes imgcarousel {
-    0%{
-        opacity:1;
+    0% {
+        opacity: 1;
     }
-    17%{
-        opacity:1;
+
+    17% {
+        opacity: 1;
     }
-    25%{
-        opacity:0;
+
+    25% {
+        opacity: 0;
     }
-    92%{
-        opacity:0;
+
+    92% {
+        opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-#carousel .img1{
+#carousel .img1 {
     animation-delay: 6s;
 }
-#carousel .img2{
+
+#carousel .img2 {
     animation-delay: 4s;
 }
-#carousel .img3{
+
+#carousel .img3 {
     animation-delay: 2s;
 }
-#carousel .img4{
+
+#carousel .img4 {
     animation-delay: 0s;
 }
