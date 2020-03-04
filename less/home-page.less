@@ -8,7 +8,7 @@
     }
 
     .btn {
-        .btn-base(@bg-color, 200px, @nav-font);
+        .btn-base(@bg-color2, 200px, @nav-font);
     }
 
     // .btn
@@ -19,13 +19,12 @@
 .categories {
     .container();
     margin: 0 auto;
-    margin-bottom: 2%;
     nav {
-        display        : flex;
+        display: flex;
         justify-content: space-between;
         a {
             text-decoration: none;
-            color: black;
+            color: @main-font-color;
         }
     }
 }

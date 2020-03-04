@@ -243,7 +243,6 @@ footer .copyright {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .categories {
@@ -257,7 +256,7 @@ footer .copyright {
 }
 .categories nav a {
   text-decoration: none;
-  color: black;
+  color: #050C10;
 }
 .trending {
   max-width: 1400px;
