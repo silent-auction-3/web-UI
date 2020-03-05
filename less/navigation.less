@@ -8,6 +8,13 @@
         width: 20%;
         padding: 2%;
     }
+    @media @phone {
+        flex-direction: column;
+        .logo {
+            margin: 0 auto;
+            width: unset;
+        }
+    }
     nav {
         display: flex;
         justify-content: space-around;
@@ -19,7 +26,12 @@
             }
 
         @media @phone {
-            width: 80%;
+            width: 100%;
+            flex-direction: column;
+            a {
+                margin: 10% 0;
+            }
+
         }
     }
 }
