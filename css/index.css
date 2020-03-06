@@ -381,14 +381,51 @@ footer .copyright {
 }
 .ab-sect {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
-.ab-sect .ab-div {
-  display: flex;
-  flex-direction: column;
+.ab-sect #ab-div {
+  max-width: 40%;
+  background-color: #24364B;
+  padding: 2%;
+  border-radius: 90px;
+  border: 3px dotted #F8F6F5;
+  color: #D43F59;
+  margin: 2%;
+}
+.ab-sect #ab-div h3 {
+  color: #F8F6F5;
+  margin-left: 25%;
+}
+.ab-sect #ab-div p {
+  text-align: center;
+}
+.ab-sect #ab-div p span {
+  font-weight: bolder;
+  font-size: 150%;
+}
+.ab-sect #ab-div a {
+  color: #D43F59;
 }
 .profilepic {
-  width: 28%;
+  width: 70%;
+  border-radius: 90px;
+  border: 3px dotted #D43F59;
+  margin-left: 15%;
+}
+.ab-h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  color: #D43F59;
+}
+span {
+  font-size: 150%;
+  color: #24364B;
+  width: 60%;
+  font-weight: 700;
+  text-align: center;
 }
 .faq {
   display: flex;
