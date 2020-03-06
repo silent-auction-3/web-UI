@@ -7,12 +7,20 @@
     .logo {
         width: 20%;
         padding: 2%;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     @media @phone {
         flex-direction: column;
         .logo {
-            margin: 0 auto;
             width: unset;
+            img{
+                display: block;
+                width: 95%;
+                margin: 0 auto;
+            }
         }
     }
     nav {

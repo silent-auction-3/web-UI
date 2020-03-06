@@ -139,24 +139,26 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #050C10;
-  background-color: #A9B1AF;
+  color: #050c10;
+  background-color: #a9b1af;
 }
 nav {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
 }
-h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #050C10;
+  color: #050c10;
 }
 h1 {
+  font-family: 'Russo One', sans-serif;
+  color: #f8f6f5;
   font-size: 4rem;
-  margin: 2%;
+  margin: 4% auto;
+  text-align: center;
 }
 h2 {
   font-size: 3.2rem;
@@ -188,19 +190,27 @@ footer .copyright {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #24364B;
+  background-color: #24364b;
 }
 .navbar .logo {
   width: 20%;
   padding: 2%;
+}
+.navbar .logo img {
+  display: block;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .navbar {
     flex-direction: column;
   }
   .navbar .logo {
-    margin: 0 auto;
     width: unset;
+  }
+  .navbar .logo img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 .navbar nav {
@@ -211,7 +221,7 @@ footer .copyright {
 }
 .navbar nav a {
   text-decoration: none;
-  color: #F8F6F5;
+  color: #f8f6f5;
 }
 @media (max-width: 500px) {
   .navbar nav {
@@ -235,16 +245,16 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background-color: #0F1A24;
+  background-color: #0f1a24;
   width: 200px;
-  color: #F8F6F5;
+  color: #f8f6f5;
   height: 38px;
   font-size: 1.8rem;
 }
 .searchbar .btn:hover {
-  background-color: #F8F6F5;
-  color: #0F1A24;
-  border: 2px solid #0F1A24;
+  background-color: #f8f6f5;
+  color: #0f1a24;
+  border: 2px solid #0f1a24;
 }
 @media (max-width: 500px) {
   .searchbar .btn {
@@ -281,7 +291,7 @@ footer .copyright {
 .categories nav a {
   display: block;
   text-decoration: none;
-  color: #050C10;
+  color: #050c10;
   padding: 10px;
 }
 @media (max-width: 500px) {
@@ -297,45 +307,45 @@ footer .copyright {
 }
 .electronics:hover .electronics.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .electronics:hover .electronics.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .outdoor:hover .outdoor.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .outdoor:hover .outdoor.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .apparel:hover .apparel.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .apparel:hover .apparel.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .children:hover .children.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .children:hover .children.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .automotive:hover .automotive.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .automotive:hover .automotive.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .homedecour:hover .homedecour.menu {
   display: block;
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .homedecour:hover .homedecour.menu a {
-  border: 1px solid #24364B;
+  border: 1px solid #24364b;
 }
 .trending {
   max-width: 1400px;
@@ -452,7 +462,7 @@ footer .copyright {
   animation-delay: 0s;
 }
 .ex-body {
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .ex-sect {
   display: flex;
@@ -466,7 +476,7 @@ footer .copyright {
 .ex-sect h3 {
   margin-top: 4%;
   color: gray;
-  text-decoration: crimson line-through;
+  text-decoration: #dc143c line-through;
 }
 .ex-sect h5 {
   margin: 2% 0%;
@@ -483,7 +493,7 @@ footer .copyright {
   opacity: 0.8;
 }
 .ab-body {
-  background-color: #A9B1AF;
+  background-color: #a9b1af;
 }
 .ab-sect {
   display: flex;
@@ -493,15 +503,15 @@ footer .copyright {
 }
 .ab-sect #ab-div {
   max-width: 40%;
-  background-color: #24364B;
+  background-color: #24364b;
   padding: 2%;
   border-radius: 90px;
-  border: 3px dotted #F8F6F5;
-  color: #D43F59;
+  border: 3px dotted #0f1a24;
+  color: #24364b;
   margin: 2%;
 }
 .ab-sect #ab-div h3 {
-  color: #F8F6F5;
+  color: #0f1a24;
   margin-left: 25%;
 }
 .ab-sect #ab-div p {
@@ -512,23 +522,23 @@ footer .copyright {
   font-size: 150%;
 }
 .ab-sect #ab-div a {
-  color: #D43F59;
+  color: #0f1a24;
 }
 .profilepic {
   width: 70%;
   border-radius: 90px;
-  border: 3px dotted #D43F59;
+  border: 3px dotted #0f1a24;
   margin-left: 15%;
 }
 .ab-h1 {
   width: 100%;
   text-align: center;
   font-size: 5rem;
-  color: #D43F59;
+  color: #0f1a24;
 }
 span {
   font-size: 150%;
-  color: #24364B;
+  color: #24364b;
   width: 60%;
   font-weight: 700;
   text-align: center;
