@@ -1,16 +1,24 @@
 .searchbar {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    padding        : 2%;
+    padding: 2%;
 
     input {
         width: 60%;
     }
 
     .btn {
-        .btn-base(@bg-color, 200px, @nav-font);
+        .btn-base(@bg-color2, 200px, @nav-font);
     }
-
+    @media @phone {
+        flex-direction: column;
+        margin-bottom: 4%;
+        input {
+            height: 10vh;
+            width: 100%;
+            margin-bottom: 2%;
+        }
+    }
     // .btn
 }
 
@@ -19,33 +27,108 @@
 .categories {
     .container();
     margin: 0 auto;
-    margin-bottom: 2%;
     nav {
-        display        : flex;
+        display: flex;
         justify-content: space-between;
         a {
+            display: block;
             text-decoration: none;
-            color: black;
+            color: @main-font-color;
+            padding: 10px;
+        }
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
 
+// Category dropdown menus
+.menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.electronics:hover .electronics.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+.outdoor:hover .outdoor.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+.apparel:hover .apparel.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+.children:hover .children.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+.automotive:hover .automotive.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+.homedecour:hover .homedecour.menu {
+    display: block;
+    background-color: @bg-color;
+    a {
+        border: 1px solid @nav-bg;
+    }
+}
+// end category dropdown menus
+
 .trending {
     .container();
-    margin-top: 50%;
+    margin: 5% 0;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
 
 .ending {
     .container();
-    margin-top: 10%;
+    margin-top: 5% 0;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
+
+.trendingHeader, .endingHeader {
+    margin: 3%;
+    text-align: center;
+}
+
 .circleimg {
     border-radius: 50%;
     width: 15%;
+    @media @phone {
+        width: 70%;
+        margin: 5% 0;
+    }
 }
 
 .ex-sect {
@@ -66,6 +149,10 @@
 
 //closes section
 
+.carouselContainer {
+    height: 70vh;
+}
+
 #carousel {
     position: relative;
 }
@@ -77,8 +164,8 @@
 }
 
 #carousel img {
-    position : absolute;
-    left     : 0;
+    position: absolute;
+    left: 0;
     animation: imgcarousel 9s infinite;
 }
 

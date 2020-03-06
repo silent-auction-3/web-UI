@@ -194,6 +194,15 @@ footer .copyright {
   width: 20%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .logo {
+    margin: 0 auto;
+    width: unset;
+  }
+}
 .navbar nav {
   display: flex;
   justify-content: space-around;
@@ -206,7 +215,11 @@ footer .copyright {
 }
 @media (max-width: 500px) {
   .navbar nav {
-    width: 80%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar nav a {
+    margin: 10% 0;
   }
 }
 .searchbar {
@@ -239,11 +252,21 @@ footer .copyright {
     height: 50px;
   }
 }
+@media (max-width: 500px) {
+  .searchbar {
+    flex-direction: column;
+    margin-bottom: 4%;
+  }
+  .searchbar input {
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
 .categories {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .categories {
@@ -256,14 +279,69 @@ footer .copyright {
   justify-content: space-between;
 }
 .categories nav a {
+  display: block;
   text-decoration: none;
-  color: black;
+  color: #050C10;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .categories nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.electronics:hover .electronics.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.electronics:hover .electronics.menu a {
+  border: 1px solid #24364B;
+}
+.outdoor:hover .outdoor.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.outdoor:hover .outdoor.menu a {
+  border: 1px solid #24364B;
+}
+.apparel:hover .apparel.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.apparel:hover .apparel.menu a {
+  border: 1px solid #24364B;
+}
+.children:hover .children.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.children:hover .children.menu a {
+  border: 1px solid #24364B;
+}
+.automotive:hover .automotive.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.automotive:hover .automotive.menu a {
+  border: 1px solid #24364B;
+}
+.homedecour:hover .homedecour.menu {
+  display: block;
+  background-color: #A9B1AF;
+}
+.homedecour:hover .homedecour.menu a {
+  border: 1px solid #24364B;
 }
 .trending {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 50%;
+  margin: 5% 0;
   display: flex;
   justify-content: space-between;
 }
@@ -273,11 +351,18 @@ footer .copyright {
     width: 85%;
   }
 }
+@media (max-width: 500px) {
+  .trending {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 .ending {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5% 0;
   display: flex;
   justify-content: space-between;
 }
@@ -287,9 +372,27 @@ footer .copyright {
     width: 85%;
   }
 }
+@media (max-width: 500px) {
+  .ending {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.trendingHeader,
+.endingHeader {
+  margin: 3%;
+  text-align: center;
+}
 .circleimg {
   border-radius: 50%;
   width: 15%;
+}
+@media (max-width: 500px) {
+  .circleimg {
+    width: 70%;
+    margin: 5% 0;
+  }
 }
 .ex-sect {
   display: flex;
@@ -302,6 +405,9 @@ footer .copyright {
   padding: 1% 1% 5% 1%;
   border: 1px solid lightgrey;
   box-shadow: 5px 10px lightgrey;
+}
+.carouselContainer {
+  height: 70vh;
 }
 #carousel {
   position: relative;
